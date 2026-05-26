@@ -1,0 +1,20 @@
+{
+  "name": "applicativo-prenotazione-ottocn",
+  "version": "1.0.0",
+  "description": "Sistema di prenotazione per il Bar OttoCN",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "keywords": [
+    "typescript",
+    "prenotazione",
+    "ottocn"
+  ],
+  "author": "Studente",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

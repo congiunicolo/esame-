@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #000;
+}
+
+header {
+    background: #111;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #ff0000;}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+}
+
+.site-logo {
+    height: 70px;
+    width: auto;
+}
+
+.logo-container {
+    padding-left: 20px; /* Add some padding for spacing */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #ff0000;
+}
+
+.hero {
+    position: relative;
+    background: url('../immagini/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55); /* Oscuramento più leggero (da 0.75 a 0.55) */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #ff0000; /* Rosso acceso */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    font-weight: 900;
+}
+
+.hero-content p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #ff3333; /* Rosso acceso leggermente più chiaro per leggibilità */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff0000;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #cc0000;
+}
+
+section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #ff0000;
+}
+
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem; /* Spazio tra le categorie */
+}
+
+.menu-category {
+    flex: 1;
+    min-width: 300px; /* Larghezza minima per le colonne */
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255,0,0,0.3);
+    border: 1px solid #333;
+}
+
+.menu-category h3 {
+    text-align: center;
+    color: #ff0000;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #ff0000;
+    padding-bottom: 1rem;
+}
+
+.menu-category .menu-item {
+    background: none;
+    box-shadow: none;
+    border: none;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.menu-category .menu-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255,0,0,0.2);
+    border: 1px solid #333;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    border-top: 2px solid #ff0000;}
+
+.prenota-box {
+    text-align: center;
+    background: #111;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(255,0,0,0.1);
+    border: 1px solid #ff0000;
+}
+
+.prenota-box p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.prenota-box p i, .prenota-box p em {
+    color: #ff0000;
+}

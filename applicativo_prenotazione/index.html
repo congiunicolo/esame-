@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema di Prenotazione - OttoCN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>OttoCN Milano</h1>
+            <p>Prenotazione Tavolo Aperitivo</p>
+        </header>
+
+        <form id="reservationForm">
+            <div class="form-group">
+                <label for="userName">Nome Cliente:</label>
+                <input type="text" id="userName" required placeholder="Inserisci il tuo nome">
+            </div>
+
+            <div class="form-group">
+                <label for="numPeople">Numero di Persone:</label>
+                <input type="number" id="numPeople" required min="1" value="1">
+            </div>
+
+            <div class="form-group">
+                <label for="resDate">Data Prenotazione:</label>
+                <input type="date" id="resDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="resTime">Orario:</label>
+                <input type="time" id="resTime" required>
+            </div>
+
+            <button type="submit" id="submitBtn">Conferma Prenotazione</button>
+            <a href="../sito_web/prenotazioni.html" class="back-link">Torna al sito</a>
+        </form>
+
+        <div id="resultMessage" class="message"></div>
+    </div>
+
+    <!-- Caricamento dello script compilato da TS -->
+    <script src="dist/main.js"></script>
+</body>
+</html>
