@@ -1,7 +1,7 @@
 // Definizione delle costanti per la logica di business
 const MAX_PERSONE = 10;
-const APERITIVO_INIZIO = "16:00";
-const APERITIVO_FINE = "19:00";
+const APERITIVO_INIZIO = "17:00";
+const APERITIVO_FINE = "21:00";
 
 /**
  * Funzione principale per gestire l'invio del modulo
@@ -37,9 +37,9 @@ function gestisciPrenotazione(event: Event): void {
         return;
     }
 
-    // 3. Controllo fascia oraria aperitivo (16:00 - 19:00 per tutti i giorni)
+    // 3. Controllo fascia oraria aperitivo (17:00 - 21:00 per tutti i giorni)
     if (!isOrarioAperitivo(orario)) {
-        mostraErrore("Prenotazione disponibile solo per fascia aperitivo (16:00 - 19:00)");
+        mostraErrore("Prenotazione disponibile solo per fascia aperitivo (17:00 - 21:00)");
         return;
     }
 

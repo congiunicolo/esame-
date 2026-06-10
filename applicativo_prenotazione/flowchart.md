@@ -7,7 +7,7 @@ graph TD
     B --> C{Pressione Tasto 'Conferma'}
     C --> D{Numero Persone > 10?}
     D -- SI --> E[Mostra Errore: 'Contattare il locale per gruppi numerosi']
-    D -- NO --> F{Orario tra 16:00 e 19:00?}
+    D -- NO --> F{Orario tra 17:00 e 21:00?}
     F -- NO --> G[Mostra Errore: 'Prenotazione disponibile solo per fascia aperitivo']
     F -- SI --> H[Mostra Successo: 'Prenotazione confermata']
     H --> I[Fine]
@@ -25,7 +25,7 @@ graph TD
 
 ### Controlli Logici e Condizioni
 1. **Soglia Gruppi**: Se `numero_persone > 10`, viene bloccata la prenotazione automatica.
-2. **Validazione Orario**: L'orario inserito deve essere compreso nell'intervallo `[16:00, 19:00]` per tutti i giorni.
+2. **Validazione Orario**: L'orario inserito deve essere compreso nell'intervallo `[17:00, 21:00]` per tutti i giorni.
 
 ### Principali Elaborazioni
 - Parsing dei dati dal modulo HTML.

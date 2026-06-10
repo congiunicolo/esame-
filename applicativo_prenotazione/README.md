@@ -7,7 +7,7 @@ Applicativo web per la gestione delle prenotazioni dei tavoli presso il Bar Otto
 - Modulo di inserimento dati (Nome, Persone, Orario).
 - Validazione lato client:
     - Massimo 10 persone per prenotazione online.
-    - Prenotazione consentita solo tra le 16:00 e le 19:00 (fascia aperitivo).
+    - Prenotazione consentita solo tra le 17:00 e le 21:00 (fascia aperitivo).
 - Feedback immediato all'utente senza ricaricamento pagina.
 
 ## Requisiti Tecnici
